@@ -9,4 +9,8 @@ public interface UserRepository extends JpaRepository<UserEntity, Integer> { //i
     boolean existsByUsername(String username);
     // JPA 구문을 강제 커스텀해서 만들어야함
     // 존재하면 ture 아니면 false 리턴함
+
+    UserEntity findByUsername(String username);
+
+
 }
